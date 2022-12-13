@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<libs lib_count="2">
+  <kernels>
+    <lib kernel_count="1" name="libgaussian3x3_gc.so" target="DSP">
+      <kernel exe="gaussian3x3" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="14" name="libnn_gc.so" target="DSP">
+      <kernel exe="Convolution" id="0" post="" pre="Convolution_pre" />
+      <kernel exe="DwConvolution" id="1" post="" pre="" />
+      <kernel exe="Deconvolution" id="2" post="" pre="" />
+      <kernel exe="DwdeConvolution" id="3" post="" pre="" />
+      <kernel exe="Pooling" id="4" post="" pre="" />
+      <kernel exe="Concat" id="5" post="" pre="" />
+      <kernel exe="FullyConnected" id="6" post="" pre="" />
+      <kernel exe="Eltwise" id="7" post="" pre="" />
+      <kernel exe="SoftMax" id="8" post="" pre="Softmax_pre" />
+      <kernel exe="Sigmoid" id="9" post="" pre="Sigmoid_pre" />
+      <kernel exe="PoolConv" id="10" post="" pre="PoolConv_pre" />
+      <kernel exe="ArgMax_axis1" id="11" post="" pre="" />
+      <kernel exe="ArgMax_axis3" id="12" post="" pre="" />
+      <kernel exe="ArgMaxResize_axis1" id="13" post="" pre="" />
+    </lib>
+  </kernels>
+</libs>
